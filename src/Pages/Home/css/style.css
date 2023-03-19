@@ -11,6 +11,7 @@ h3{
 
 section.bem-vindo {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/back.webp) fixed;
+    backface-visibility: hidden;
     background-size: cover;
     height: calc(100vh - 70px);
     margin-top: 0 !important;
@@ -109,6 +110,7 @@ section#about article {
 
 section#about article:first-child {
     background: url(../img/back-about.webp) no-repeat top;
+    backface-visibility: hidden;
     background-size: cover;
     width: 50%;
     border-radius:8px 0px 0px 8px;
@@ -255,6 +257,7 @@ section#match h1{
 
 section#back-ag{
     background: url(../img/back-ag.jpg) no-repeat center;
+    backface-visibility: hidden;
     background-size: cover;
     height: 100vh; 
 }
