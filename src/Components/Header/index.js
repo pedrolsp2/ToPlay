@@ -1,5 +1,6 @@
 import './css/style-header.css';
 import { Link } from 'react-router-dom'; 
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toggleMenu(event) {
@@ -13,13 +14,9 @@ function toggleMenu(event) {
   } else {
     event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
   }
-}
- function btn(){
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 }
-
-btn();
 
 function Header() {
     return (
