@@ -1,4 +1,5 @@
 import './style.css';
+import {toast} from 'react-toastify';
 
 function PreReserva() {
     return (
@@ -56,7 +57,11 @@ function PreReserva() {
                     <input type="text" name="TelJogador" id="TelJogador" placeholder="Telefone para contato" />
                 </article>
 
+
             </section>
+            <h2 id='submit'>
+                <button onClick={()=>toast.success('Pré reserva feita com sucesso!')}>Concluir</button>
+            </h2>
         </div>
     )
 }

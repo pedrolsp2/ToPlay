@@ -1,4 +1,5 @@
 import './css/style.css';
+import {toast} from 'react-toastify';
 import clock from './img/clcok.svg';
 import agenda from './img/agenda.svg';
 import ball from './img/ball.svg';
@@ -24,7 +25,7 @@ function Home() {
                     <div className='notificacoes'>
                         <label for="email">Deseja ter acesso às novas atualizações?</label>
                         <input type='email' id='email' name='email' placeholder='Digite seu e-mail para ter acesso' />
-                        <button>Enviar</button>
+                        <button onClick={()=>toast.success('Feito! Agora você receberá notificações!')}>Enviar</button>
                     </div>
                 </article>
             </section>
@@ -168,19 +169,19 @@ function Home() {
 
                             <p>Tenha todo o controle de sua agenda, tenha dasboard com o seu faturamento, controle de status de locação, veja as proximas locações com todas as informações necessarias para a locação.</p>
                     </div>
-                    <a href='' id='btn-sis'>Quero o sistema</a>
+                    <a onClick={()=>toast.success('Olhe sua caixa de e-mail.')} id='btn-sis'>Quero o sistema</a>
                 </main>
             </section>
             <main>
 
                 <section id='sec-form'>
                     <h1 id='title'>Entre em contato para ter o melhor sistema para seu centro esportivo!</h1>
-                    <form action=''>
+                    <form>
                         <input type='text' id='nome' name='nome' placeholder='Nome'></input>
                         <input type='text' id='email' name='email' placeholder='E-mail para contato'></input>
                         <textarea id='contato' name='contato' placeholder='Um breve relato sobre seu contato'></textarea>
 
-                        <input type='submit' id='enviar' value='Enviar'></input>
+                        <input type='submit' id='enviar' value='Enviar' onClick={()=>toast.success('Sucesso! Assim que possivel entraremos em contato.')}></input>
                     </form>
                 </section>
 

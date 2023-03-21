@@ -319,6 +319,7 @@ section#back-ag h1:first-child{
     position: relative;
     top: 8rem;
     left:70%;
+    cursor: pointer;
 }
  
 section#sec-form h1{
