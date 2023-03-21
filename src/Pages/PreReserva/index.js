@@ -1,6 +1,26 @@
 import './style.css';
 import {toast} from 'react-toastify';
 
+function campus(){
+    let txtData = document.getElementById('DataPartida').value;
+    let txtHora = document.getElementById('HorarioPartida').value;
+    let txtDuracao = document.getElementById('DuracaoPartida').value;
+    let txtJogador = document.getElementById('NumeroJogadores').value;
+    let txtBola = document.getElementById('NumeroBolas').value;
+    let txtColete= document.getElementById('NumeroUniformes').value;
+    let txtNome= document.getElementById('NomeJogador').value;
+    let txtTel= document.getElementById('TelJogador').value;
+
+    if(txtData == "" || txtHora == "" || txtDuracao == "" || txtJogador == "" || txtBola == "" || txtColete == "" || txtNome == "" || txtTel == ""){
+        toast.error('Preencha todos os campos!')
+    }
+    else{
+        toast.success('Registrado com sucesso!') 
+    }
+
+}
+
+
 function PreReserva() {
     return (
         <div>
@@ -60,7 +80,7 @@ function PreReserva() {
 
             </section>
             <h2 id='submit'>
-                <button onClick={()=>toast.success('Pré reserva feita com sucesso!')}>Concluir</button>
+                <button onClick={()=>campus()}>Concluir</button>
             </h2>
         </div>
     )
