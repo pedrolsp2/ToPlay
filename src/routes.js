@@ -5,6 +5,7 @@ import PreReserva from './Pages/PreReserva';
 import Quadra from './Pages/Quadra';
 import LoginUser from './Pages/LoginUser';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 function RoutesApp(){
     return(
@@ -16,6 +17,7 @@ function RoutesApp(){
             <Route path="/quadra" element={ <Quadra/> }/> 
             <Route path="/login" element={ <LoginUser/> }/> 
         </Routes>
+        <Footer/>
     </BrowserRouter>
 );
 }
