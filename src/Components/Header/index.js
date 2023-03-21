@@ -13,10 +13,9 @@ function toggleMenu(event) {
     event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
   } else {
     event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
-  }
-btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
-}
+    } 
+ } 
+
 
 function Header() {
     return (
@@ -26,7 +25,7 @@ function Header() {
                 <img src='logo.png' />
             </Link>
             <nav id="nav">
-                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false" onClick={toggleMenu}>
                     <span id="hamburger"></span>
                 </button>
                 <ul id="menu" role="menu">
