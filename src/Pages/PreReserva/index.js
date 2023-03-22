@@ -11,7 +11,7 @@ function campus(){
     let txtNome= document.getElementById('NomeJogador').value;
     let txtTel= document.getElementById('TelJogador').value;
 
-    if(txtData == "" || txtHora == "" || txtDuracao == "" || txtJogador == "" || txtBola == "" || txtColete == "" || txtNome == "" || txtTel == ""){
+    if(txtData === "" || txtHora === "" || txtDuracao === "" || txtJogador === "" || txtBola === "" || txtColete === "" || txtNome === "" || txtTel === ""){
         toast.error('Preencha todos os campos!')
     }
     else{
