@@ -424,6 +424,16 @@ h4{
     background-color: var(--cor01);
     font-size: 1.2rem;
 }
+
+@media screen and (min-width: 1300px){
+
+    section#about, section#choose, section#function, section#match, section#back-ag{ 
+        margin: 10rem 0rem;
+    }
+    
+}
+
+
 @media screen and (max-width: 600px) {
     main{ 
         max-width: fit-content !important;

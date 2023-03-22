@@ -1,0 +1,131 @@
+section#login{
+    height: calc(100vh - 230px);
+    display: grid;
+    place-items: center;
+}
+
+span#first{
+    transform: rotate(180deg) !important;
+}
+
+span#first {
+    top: 0;
+}
+
+span#second {
+    bottom: 0;
+}
+
+span#first, span#second {
+    width: 100%;
+    height: 60%;
+    background-image: url(img/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+} 
+
+.login{
+    width: min(100% - 10px, 350px);
+    height: min(100% - 10px, 500px);
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    padding: 10px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-login h1, .logo-login h2{
+    background-color: #fff;
+    z-index: 2;
+    padding: 0rem 20px;
+}
+
+.logo-login h1{
+    font-weight: 400;
+}
+
+.logo-login{
+    display: grid;
+    place-items: center;
+}
+
+.logo-login img{
+    width: 22%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.logo-login hr{
+    height: 0.5px;
+    width: 100%;
+    opacity: 0.3;
+    position: relative;
+    margin-top: -2.6rem;
+}
+
+#back-to-home{
+    width: 50%;
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+#form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#input{
+    padding-top: 2rem;
+    display: grid;  
+}
+
+
+#input label {
+    font-size: 0.8rem;
+    color: #414141;
+}
+
+#input input {
+    font-size: 1rem;
+    border: 0;
+    background-color: rgb(240, 240, 240);
+    padding: 0.8rem;
+    margin-bottom: 0.7rem;
+    border-radius: 12px;
+}
+
+#esqueci-senha{
+    font-size: .8rem;
+    position: relative;
+    text-align: center;
+}
+
+#segurity{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub{
+    margin-bottom: 10px;
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--cor01);
+    border: 0px;
+    border-radius: 12px;
+    cursor: pointer;
+}

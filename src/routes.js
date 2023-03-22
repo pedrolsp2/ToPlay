@@ -17,7 +17,7 @@ function RoutesApp(){
             <Route path="/quadra" element={ <Quadra/> }/> 
             <Route path="/login" element={ <LoginUser/> }/> 
         </Routes>
-        <Footer/>
+        <Footer /> 
     </BrowserRouter>
 );
 }
