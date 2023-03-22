@@ -129,3 +129,12 @@ span#first, span#second {
     border-radius: 12px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+
+    #sub{ 
+        padding: 2em 0rem !important;
+        background-color: #414141;
+    }
+    
+}
