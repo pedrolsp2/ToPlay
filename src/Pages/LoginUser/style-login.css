@@ -133,8 +133,7 @@ span#first, span#second {
 @media screen and (max-width: 600px) {
 
     #sub{ 
-        padding: 2em 0rem !important;
-        background-color: #414141;
+height: 52px;
     }
     
 }
